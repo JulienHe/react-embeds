@@ -4,7 +4,9 @@
   "description": "React components to embed almost anything",
   "license": "MIT",
   "main": "dist/index.js",
-  "author": "Julien Henrotte",
+  "author": {
+    "name": "Julien Henrotte"
+  },
   "bugs": {
     "url": "https://github.com/JulienHe/react-embeds/issues"
   },
@@ -37,7 +39,8 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "serve-storybook": "serve storybook-static"
+    "serve-storybook": "serve storybook-static",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -78,6 +81,7 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
+    "chromatic": "^6.10.0",
     "husky": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -86,5 +90,6 @@
     "tslib": "^2.4.0",
     "typescript": "^3.9.10"
   },
-  "dependencies": {}
+  "readme": "ERROR: No README data found!",
+  "_id": "react-embeds@0.0.1"
 }

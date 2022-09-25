@@ -7,20 +7,20 @@ const SpotifyPlayer = ({
   title = 'Spotify Player',
   style = {},
   compact = false,
-  height = compact ? 80 : 380,
   frameBorder = 0,
-  neutralTheme = false,
+  noTheme = false,
+  width = '100%',
   allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture',
 }: SpotifyPlayerProps) => {
   const url = new URL(link);
-  const theme = neutralTheme ? '?theme=0' : '';
+  const theme = noTheme ? '?theme=0' : '';
 
   return (
     <iframe
       title={title}
       src={`https://open.spotify.com/embed${url.pathname}${theme}`}
-      width="100%"
-      height={height}
+      width={width}
+      height={compact ? 80 : 380}
       frameBorder={frameBorder}
       allow={allow}
       style={{
