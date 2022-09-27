@@ -3,21 +3,20 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { SpotifyPlayer } from '../index';
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Spotify',
   component: SpotifyPlayer,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+
   argTypes: {
     link: { control: { type: 'text' } },
     title: { control: { type: 'text' } },
+    width: { control: { type: 'text', defaultValue: '100%' } },
     compact: { control: { type: 'boolean', defaultValue: true } },
     noTheme: { control: { type: 'boolean', defaultValue: false } },
-    width: { control: { type: 'text', defaultValue: '100%' } },
+    frameBorder: { control: { type: 'text', defaultValue: '0' } },
   },
 } as ComponentMeta<typeof SpotifyPlayer>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof SpotifyPlayer> = args => (
   <SpotifyPlayer {...args} />
 );

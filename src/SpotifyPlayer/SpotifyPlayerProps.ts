@@ -1,11 +1,10 @@
 export interface SpotifyPlayerProps {
   link: string;
   title?: string;
-  autoplay?: boolean;
   style?: object;
+  width?: number | string;
   compact?: boolean;
   noTheme?: boolean;
-  width?: number | string;
   frameBorder?: number;
   allow?: string;
 }
