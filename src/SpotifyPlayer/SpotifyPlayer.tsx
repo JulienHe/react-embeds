@@ -13,12 +13,13 @@ const SpotifyPlayer = ({
   allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture',
 }: SpotifyPlayerProps) => {
   const url = new URL(link);
-  const theme = noTheme ? '?theme=0' : '';
 
   return (
     <iframe
       title={title}
-      src={`https://open.spotify.com/embed${url.pathname}${theme}`}
+      src={`https://open.spotify.com/embed${url.pathname}${
+        noTheme ? '?theme=0' : ''
+      }`}
       width={width}
       height={compact ? 80 : 380}
       frameBorder={frameBorder}
