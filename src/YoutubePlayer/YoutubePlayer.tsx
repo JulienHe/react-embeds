@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { SpotifyPlayerProps } from './YoutubePlayerProps';
+import { YoutubePlayerProps } from './YoutubePlayerProps';
 
-const SpotifyPlayer = ({
+const YoutubePlayer = ({
   videoID,
   title = 'Youtube Video Player',
   frameBorder = 0,
@@ -10,7 +10,7 @@ const SpotifyPlayer = ({
   width = 560,
   height = 315,
   allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
-}: SpotifyPlayerProps) => {
+}: YoutubePlayerProps) => {
   return (
     <iframe
       width={width}
@@ -24,4 +24,4 @@ const SpotifyPlayer = ({
   );
 };
 
-export default SpotifyPlayer;
+export default YoutubePlayer;

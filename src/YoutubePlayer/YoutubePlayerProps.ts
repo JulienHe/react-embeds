@@ -1,4 +1,4 @@
-export interface SpotifyPlayerProps {
+export interface YoutubePlayerProps {
   videoID: string;
   title?: string;
   frameBorder?: number;
