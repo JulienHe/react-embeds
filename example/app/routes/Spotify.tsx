@@ -1,8 +1,7 @@
 import Layout from '~/components/Layout/Layout';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
-
-import { SpotifyPlayer } from '../../../src/index';
+import { SpotifyPlayer } from 'react-embeds';
 
 export default function Index() {
   return (
